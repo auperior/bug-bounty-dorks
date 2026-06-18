@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Header -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=🐛+Bug+Bounty+Dorks;500%2B+Google+Dorks;Noob+→+Advanced;Ethical+Recon+Master" alt="Typing Animation" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=🐛+Bug+Bounty+Dorks;1000%2B+Google+Dorks;Noob+→+Advanced;Ethical+Recon+Master" alt="Typing Animation" />
 
 <br><br>
 
