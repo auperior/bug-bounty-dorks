@@ -1,0 +1,305 @@
+inurl:/responsible-disclosure
+inurl:/responsible-disclosure/ reward
+inurl:/responsible-disclosure/ swag
+inurl:/responsible-disclosure/ bounty
+inurl:/responsible-disclosure-policy
+inurl:/responsible_disclosure
+inurl:responsible-disclosure
+inurl:/bug-bounty
+inurl:/bugbounty
+inurl:/bug_bounty
+inurl:bug-bounty
+inurl:bugbounty
+inurl:/security-bug-bounty
+inurl:security.txt
+inurl:/.well-known/security.txt
+inurl:/security.txt
+site:*.com inurl:security.txt
+site:*.org inurl:security.txt
+site:*.net inurl:security.txt
+intext:"we offer a bounty"
+intext:"bug bounty program"
+intext:"security reward"
+intext:"responsible disclosure reward"
+intext:"vulnerability reward"
+intext:"security bug bounty"
+"responsible disclosure" "hall of fame"
+"bug bounty" "hall of fame"
+"security researchers" "hall of fame"
+inurl:/hall-of-fame security
+inurl:/security-hall-of-fame
+inurl:/security ext:txt "contact"
+inurl:/security "report a vulnerability"
+inurl:/security "security vulnerability"
+"security@" "report vulnerability"
+"vulnerability disclosure program"
+"responsible disclosure policy"
+"security vulnerability report"
+"report security issue"
+"submit vulnerability report"
+"powered by bugcrowd" -site:bugcrowd.com
+"powered by hackerone" -site:hackerone.com
+"powered by synack"
+"powered by yeswehack" -site:yeswehack.com
+"powered by intigriti" -site:intigriti.com
+"powered by federacy" -site:federacy.com
+"powered by openbugbounty" -site:openbugbounty.org
+"powered by disclose.io"
+"managed by huntr.dev"
+"powered by bug bounty hq"
+"submit vulnerability report" -site:hackerone.com -site:bugcrowd.com -site:synack.com -site:openbugbounty.org -site:yeswehack.com -site:intigriti.com
+"responsible disclosure" -site:hackerone.com -site:bugcrowd.com -site:synack.com
+"bug bounty" -site:hackerone.com -site:bugcrowd.com
+inurl:"bug bounty" intext:"$" inurl:/security
+inurl:"bug bounty" intext:"€" inurl:/security
+inurl:"bug bounty" intext:"£" inurl:/security
+inurl:"bug bounty" intext:"INR" inurl:/security
+inurl:"bug bounty" intext:"rupees" inurl:/security
+inurl:"bug bounty" intext:"₹" inurl:/security
+inurl:responsible-disclosure intext:"INR"
+"responsible disclosure" (monetary OR cash OR "gift card")
+intext:"BugBounty" intext:"BTC" intext:"reward"
+intext:"bug bounty" intext:"bitcoin" intext:"reward"
+intext:"bug bounty" intext:"ethereum" intext:"reward"
+intext:"bug bounty" intext:"crypto" intext:"reward"
+"responsible disclosure" (crypto OR BTC OR bitcoin OR ethereum)
+"responsible disclosure" "swag"
+"bug bounty" "swag"
+"security researcher" "swag"
+inurl:/.well-known/security ext:txt
+inurl:/.well-known/security ext:txt intext:hackerone
+inurl:/.well-known/security ext:txt -hackerone -bugcrowd -synack -openbugbounty
+inurl:/.well-known/security ext:txt intext:bounty
+inurl:/.well-known/security ext:txt intext:reward
+inurl:/.well-known/security ext:txt intext:contact
+inurl:security-policy.txt ext:txt
+inurl:security-policy ext:txt
+inurl:vulnerability-disclosure-policy ext:txt
+inurl:vulnerability-disclosure-policy ext:pdf
+inurl:security ext:txt "mailto"
+inurl:security ext:txt "PGP"
+"security.txt" "mailto" (bounty OR reward)
+"security.txt" "PGP" (bounty OR reward)
+filetype:txt "vulnerability disclosure policy"
+filetype:pdf "vulnerability disclosure policy"
+filetype:md "vulnerability disclosure policy"
+filetype:txt "bug bounty"
+filetype:txt "responsible disclosure"
+filetype:txt "security reward" rewards -"we currently" -"we do not" -"not offer"
+inurl:/bug-bounty.json
+inurl:/vdp.json
+inurl:/hackerone.yml -site:hackerone.com
+inurl:/security.yml
+inurl:'/responsible disclosure' hoodie
+insite:"responsible disclosure" -inurl:nl
+intext:responsible disclosure
+intext:bounty inurl:/security
+inurl:bug bounty intext:"rupees"
+inurl:bug bounty intext:"₹"
+inurl:responsible disclosure intext:"INR"
+"responsible disclosure" AND (monetary OR cash OR "gift card" OR crypto OR BTC)
+"security@*" AND ("bug bounty" OR "vulnerability disclosure") ext:txt
+"security.txt" AND ("mailto" OR "contact") AND (bounty OR reward)
+"submit vulnerability report" | "powered by bugcrowd" | "powered by hackerone"
+"powered by yeswehack" OR "powered by federacy" OR "powered by intigriti" -site:yeswehack.com -site:federacy.com -site:intigriti.com
+"powered by bugcrowd" OR "powered by hackerone" OR "powered by synack" -site:bugcrowd.com -site:hackerone.com -site:synack.com
+"submit vulnerability report" -site:hackerone.com -site:bugcrowd.com -site:synack.com -site:openbugbounty.org -site:yeswehack.com -site:intigriti.com -site:federacy.com
+"CVSS score" AND "eligible for a reward" -hackerone -bugcrowd
+"Powered by Bug Bounty HQ" OR "Powered by disclose.io"
+inurl:/security.txt "mailto*" -github.com -wikipedia.org -portswigger.net -magento
+inurl:/.well-known/security.txt intext:bounty -hackerone -bugcrowd -synack
+inurl:/.well-known/security.txt intext:reward -hackerone -bugcrowd -synack
+inurl:/.well-known/security.txt intext:contact -hackerone -bugcrowd -synack
+site:*/.well-known/security.txt intext:contact intext:reward
+inurl:reporting-security-issues
+inurl:/security/index.html intext:bounty
+inurl:/legal/security intext:monetary
+inurl:/trust/report-a-vulnerability
+inurl:/vulnerability-disclosure-policy reward
+inurl:/security-policy intext:reward
+inurl:/security-policy intext:bounty
+inurl:/security ext:txt "contact" "reward"
+inurl:/security ext:txt "contact" "bounty"
+"We value security researchers" OR "We appreciate security reports" AND (reward OR bounty)
+"If you discover a vulnerability" AND (swag OR "hall of fame" OR monetary)
+"If you believe you've found a security vulnerability"
+"If you find a security issue" "reward"
+"we take security very seriously" AND (reward OR bounty OR swag)
+intext:"you may be eligible for monetary compensation"
+"security vulnerability" "report" "reward"
+"vulnerability reporting policy" "reward"
+"cms" bug bounty
+buy bitcoins "bug bounty"
+"security report" "monetary" inurl:security
+"security report" "reward" inurl:report
+site:security.*.* inurl:bounty
+site:help.*.* inurl:bounty
+site:support.*.* intext:security report reward
+site:*.nl intext:security report reward
+site:*.nl intext:responsible disclosure reward
+site:*.nl intext:responsible disclosure
+site:*.uk intext:security report reward
+site:*.uk intext:responsible disclosure reward
+site:*.de inurl:bug inurl:bounty
+site:*.de intext:responsible disclosure
+site:*.fr intext:"bug bounty" OR "prime de sécurité"
+site:*.fr intext:responsible disclosure
+site:*.it intext:"bug bounty" OR intext:"security reward"
+site:*.ch filetype:txt inurl:security intext:bounty
+site:*.se intext:"responsible disclosure" intext:hall_of_fame
+site:*.at intext:responsible disclosure
+site:*.be intext:responsible disclosure
+site:*.dk inurl:/sikkerhed intext:dusør
+site:*.no inurl:/sikkerhet intext:belønning
+site:*.es inurl:/seguridad intext:recompensa
+site:*.pl inurl:/bezpieczenstwo intext:nagroda
+site:*.eu intext:responsible disclosure
+site:*.eu intext:bug bounty
+site:*.jp intext:"vulnerability report" intext:swag
+site:*.jp intext:bug bounty
+site:*.cn intext:security report reward
+site:*.cn intext:bug bounty
+site:*.in inurl:responsible disclosure
+site:*.in intext:bug bounty
+site:*.in intext:security reward
+site:*.au responsible disclosure
+site:*.au intext:bug bounty
+site:*.sg intext:bug bounty
+site:*.kr intext:bug bounty
+site:*.th intext:bug bounty
+site:*.ca intext:"responsible disclosure" intext:reward
+site:*.ca intext:bug bounty
+site:*.br responsible disclosure
+site:*.br intext:bug bounty
+site:*.mx intext:bug bounty
+site:*.ar intext:bug bounty
+site:*.za intext:bug bounty
+site:*.ng intext:bug bounty
+site:*.ae intext:bug bounty
+site:*.sa intext:bug bounty
+site:*.il intext:bug bounty
+site:*.edu "responsible disclosure" AND (reward OR swag OR bounty)
+site:*.edu inurl:/security intext:"report a vulnerability"
+site:*.edu intext:"we run a bug bounty program"
+site:*.edu intext:"vulnerability disclosure policy" intext:hall_of_fame
+site:*.edu inurl:/responsible-disclosure
+site:*.edu inurl:/bug-bounty
+site:*.edu inurl:/security
+site:*.edu intext:"security researchers" "reward"
+site:*.ac.uk intext:bug bounty
+site:*.ac.in intext:bug bounty
+site:*.edu.au intext:bug bounty
+"responsible disclosure" university
+inurl:/responsible-disclosure/ university
+site:*.gov* "vulnerability disclosure program" OR "bug bounty"
+site:*.gov* inurl:/security intext:contact intext:reward
+site:*.gov* filetype:pdf "vulnerability disclosure policy"
+site:*.gov* intext:responsible disclosure
+site:*.gov* inurl:/responsible-disclosure
+site:*.gov* inurl:/bug-bounty
+site:*.gov* inurl:/security
+site:*.gov* intext:"security researchers"
+site:*.gov* intext:"bug bounty program"
+site:*.gov.uk intext:bug bounty
+site:*.gov.au intext:bug bounty
+site:*.gov.in intext:bug bounty
+site:*.gov.ca intext:bug bounty
+site:*.gov.br intext:bug bounty
+site:*.bank intext:bug bounty
+site:*.finance intext:bug bounty
+site:*.insurance intext:bug bounty
+site:*.pay intext:bug bounty
+site:*.crypto intext:bug bounty
+site:*.exchange intext:bug bounty
+intext:"financial services" "bug bounty"
+intext:"banking" "vulnerability disclosure"
+site:*.health intext:bug bounty
+site:*.medical intext:bug bounty
+site:*.hospital intext:bug bounty
+site:*.pharma intext:bug bounty
+intext:"healthcare" "vulnerability disclosure"
+intext:"HIPAA" "bug bounty"
+site:*.shop intext:bug bounty
+site:*.store intext:bug bounty
+site:*.market intext:bug bounty
+intext:"e-commerce" "bug bounty"
+intext:"online store" "vulnerability disclosure"
+site:*.io intext:bug bounty
+site:*.app intext:bug bounty
+site:*.cloud intext:bug bounty
+site:*.ai intext:bug bounty
+site:*.dev intext:bug bounty
+site:*.tech intext:bug bounty
+intext:"SaaS" "bug bounty"
+intext:"API" "vulnerability disclosure"
+site:*.game intext:bug bounty
+site:*.gaming intext:bug bounty
+site:*.esports intext:bug bounty
+intext:"gaming" "bug bounty"
+intext:"esports" "vulnerability disclosure"
+inurl: private bugbountyprogram
+inurl:/security ext:txt "contact" "reward" -github.com -wikipedia.org -portswigger.net
+inurl:/security ext:txt "bounty" -github.com -wikipedia.org -portswigger.net
+site:*.*.* inurl:bug inurl:bounty
+site:*.*.* inurl:security inurl:reward
+site:*.*.* inurl:responsible inurl:disclosure
+site:developers.*.* intext:bug bounty
+site:developer.*.* intext:bug bounty
+site:api.*.* intext:security intext:reward
+site:docs.*.* intext:vulnerability disclosure
+inurl:/api intext:bug bounty
+inurl:/developer intext:security reward
+site:github.com "responsible disclosure" "reward"
+site:github.com "bug bounty" "SECURITY.md"
+site:github.com "vulnerability disclosure policy"
+site:gitlab.com "responsible disclosure"
+site:gitlab.com "bug bounty"
+intext:"bug bounty" "security engineer" site:careers.*
+intext:"bug bounty" "security researcher" site:jobs.*
+intext:"vulnerability disclosure" "security team" site:careers.*
+intext:"launched bug bounty program"
+intext:"announced vulnerability disclosure program"
+intext:"new bug bounty" "program"
+intext:"security researchers" "rewarded"
+site:web.archive.org inurl:bug-bounty
+site:web.archive.org inurl:responsible-disclosure
+site:web.archive.org "bug bounty program"
+intitle:"Bug Bounty" OR intitle:"Vulnerability Disclosure" OR intitle:"Security Rewards"
+intitle:"Responsible Disclosure" intext:reward
+intitle:"Security" intitle:"Bounty"
+inurl:/security AND intitle:"report"
+inurl:/bug AND intitle:"bounty"
+("vulnerability disclosure program" OR "bug bounty program" OR "responsible disclosure") AND (reward OR bounty OR swag OR "hall of fame" OR monetary OR cash)
+("security researchers" OR "white hat" OR "ethical hacker") AND (reward OR bounty OR swag)
+("submit vulnerability" OR "report vulnerability" OR "disclose vulnerability") AND (reward OR bounty)
+("security.txt" OR "security policy" OR "vulnerability policy") AND (bounty OR reward OR contact)
+"van de melding met een minimum van een" -site:responsibledisclosure.nl
+site:responsibledisclosure.com
+"responsible disclosure" -site:hackerone.com -site:bugcrowd.com -site:synack.com -site:openbugbounty.org -site:yeswehack.com -site:intigriti.com -site:federacy.com
+"bug bounty" -site:hackerone.com -site:bugcrowd.com -site:synack.com -site:openbugbounty.org
+"vulnerability disclosure" -site:hackerone.com -site:bugcrowd.com
+"security researchers" "reward" -site:hackerone.com -site:bugcrowd.com
+"bug bounty" "SQL injection"
+"bug bounty" "XSS" "reward"
+"bug bounty" "RCE"
+"bug bounty" "IDOR"
+"bug bounty" "CSRF"
+"vulnerability disclosure" "critical" "reward"
+intext:"mobile app" "bug bounty"
+intext:"iOS" "vulnerability disclosure"
+intext:"Android" "bug bounty"
+site:apps.*.* intext:security reward
+intext:"IoT" "bug bounty"
+intext:"hardware" "vulnerability disclosure"
+intext:"firmware" "bug bounty"
+intext:"blockchain" "bug bounty"
+intext:"smart contract" "bug bounty"
+intext:"DeFi" "vulnerability disclosure"
+intext:"NFT" "bug bounty"
+site:*.eth intext:bug bounty
+intext:"automotive" "bug bounty"
+intext:"vehicle" "vulnerability disclosure"
+intext:"car" "bug bounty"
+intext:"critical infrastructure" "vulnerability disclosure"
+intext:"SCADA" "bug bounty"
+intext:"industrial control" "security researchers"

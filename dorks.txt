@@ -1,0 +1,544 @@
+# ============================================================
+# 🐛 BUG BOUNTY DORKS COLLECTION - NOOB TO ADVANCED
+# ============================================================
+# Target: Security researchers, bug bounty hunters, pentesters
+# Purpose: Find responsible disclosure & bug bounty programs
+# Last Updated: 2026-06-18
+# 
+# ⚠️ ETHICAL USE ONLY - Always follow responsible disclosure
+# ============================================================
+
+
+# ════════════════════════════════════════════════════════════
+# 📚 LEVEL 1: NOOB (Basic Dorks - Easy to Understand)
+# ════════════════════════════════════════════════════════════
+
+# ─── 1.1 Basic Responsible Disclosure Pages ─────────────────
+inurl:/responsible-disclosure
+inurl:/responsible-disclosure/ reward
+inurl:/responsible-disclosure/ swag
+inurl:/responsible-disclosure/ bounty
+inurl:/responsible-disclosure-policy
+inurl:/responsible_disclosure
+inurl:responsible-disclosure
+
+# ─── 1.2 Basic Bug Bounty Pages ────────────────────────────
+inurl:/bug-bounty
+inurl:/bugbounty
+inurl:/bug_bounty
+inurl:bug-bounty
+inurl:bugbounty
+inurl:/security-bug-bounty
+
+# ─── 1.3 Security.txt Files ────────────────────────────────
+inurl:security.txt
+inurl:/.well-known/security.txt
+inurl:/security.txt
+site:*.com inurl:security.txt
+site:*.org inurl:security.txt
+site:*.net inurl:security.txt
+
+# ─── 1.4 Basic Reward Keywords ─────────────────────────────
+intext:"we offer a bounty"
+intext:"bug bounty program"
+intext:"security reward"
+intext:"responsible disclosure reward"
+intext:"vulnerability reward"
+intext:"security bug bounty"
+
+# ─── 1.5 Hall of Fame ──────────────────────────────────────
+"responsible disclosure" "hall of fame"
+"bug bounty" "hall of fame"
+"security researchers" "hall of fame"
+inurl:/hall-of-fame security
+inurl:/security-hall-of-fame
+
+# ─── 1.6 Contact Pages ─────────────────────────────────────
+inurl:/security ext:txt "contact"
+inurl:/security "report a vulnerability"
+inurl:/security "security vulnerability"
+"security@" "report vulnerability"
+
+# ─── 1.7 Simple Vulnerability Disclosure ───────────────────
+"vulnerability disclosure program"
+"responsible disclosure policy"
+"security vulnerability report"
+"report security issue"
+"submit vulnerability report"
+
+
+# ════════════════════════════════════════════════════════════
+# 📚 LEVEL 2: INTERMEDIATE (Targeted & Refined)
+# ════════════════════════════════════════════════════════════
+
+# ─── 2.1 Platform Detection (Find unlisted programs) ───────
+"powered by bugcrowd" -site:bugcrowd.com
+"powered by hackerone" -site:hackerone.com
+"powered by synack"
+"powered by yeswehack" -site:yeswehack.com
+"powered by intigriti" -site:intigriti.com
+"powered by federacy" -site:federacy.com
+"powered by openbugbounty" -site:openbugbounty.org
+"powered by disclose.io"
+"managed by huntr.dev"
+"powered by bug bounty hq"
+
+# ─── 2.2 Exclude Major Platforms (Self-hosted programs) ──────
+"submit vulnerability report" -site:hackerone.com -site:bugcrowd.com -site:synack.com -site:openbugbounty.org -site:yeswehack.com -site:intigriti.com
+"responsible disclosure" -site:hackerone.com -site:bugcrowd.com -site:synack.com
+"bug bounty" -site:hackerone.com -site:bugcrowd.com
+
+# ─── 2.3 Specific Reward Types ───────────────────────────────
+# Monetary rewards
+inurl:"bug bounty" intext:"$" inurl:/security
+inurl:"bug bounty" intext:"€" inurl:/security
+inurl:"bug bounty" intext:"£" inurl:/security
+inurl:"bug bounty" intext:"INR" inurl:/security
+inurl:"bug bounty" intext:"rupees" inurl:/security
+inurl:"bug bounty" intext:"₹" inurl:/security
+inurl:responsible-disclosure intext:"INR"
+"responsible disclosure" (monetary OR cash OR "gift card")
+
+# Crypto rewards
+intext:"BugBounty" intext:"BTC" intext:"reward"
+intext:"bug bounty" intext:"bitcoin" intext:"reward"
+intext:"bug bounty" intext:"ethereum" intext:"reward"
+intext:"bug bounty" intext:"crypto" intext:"reward"
+"responsible disclosure" (crypto OR BTC OR bitcoin OR ethereum)
+
+# Swag rewards
+inurl:/responsible-disclosure/ swag
+"responsible disclosure" "swag"
+"bug bounty" "swag"
+"security researcher" "swag"
+
+# ─── 2.4 Well-known Security Files ─────────────────────────
+inurl:/.well-known/security ext:txt
+inurl:/.well-known/security ext:txt intext:hackerone
+inurl:/.well-known/security ext:txt -hackerone -bugcrowd -synack -openbugbounty
+inurl:/.well-known/security ext:txt intext:bounty
+inurl:/.well-known/security ext:txt intext:reward
+inurl:/.well-known/security ext:txt intext:contact
+
+# ─── 2.5 Security Policy Files ─────────────────────────────
+inurl:security-policy.txt ext:txt
+inurl:security-policy ext:txt
+inurl:vulnerability-disclosure-policy ext:txt
+inurl:vulnerability-disclosure-policy ext:pdf
+inurl:security ext:txt "mailto"
+inurl:security ext:txt "PGP"
+"security.txt" "mailto" (bounty OR reward)
+"security.txt" "PGP" (bounty OR reward)
+
+# ─── 2.6 Specific File Types ───────────────────────────────
+filetype:txt "vulnerability disclosure policy"
+filetype:pdf "vulnerability disclosure policy"
+filetype:md "vulnerability disclosure policy"
+filetype:txt "bug bounty"
+filetype:txt "responsible disclosure"
+filetype:txt "security reward" rewards -"we currently" -"we do not" -"not offer"
+
+# ─── 2.7 Vulnerability Disclosure JSON/YAML ────────────────
+inurl:/bug-bounty.json
+inurl:/vdp.json
+inurl:/hackerone.yml -site:hackerone.com
+inurl:/security.yml
+inurl:/.well-known/security.txt
+
+
+# ════════════════════════════════════════════════════════════
+# 📚 LEVEL 3: ADVANCED (Complex Combinations & Bypasses)
+# ════════════════════════════════════════════════════════════
+
+# ─── 3.1 Advanced Responsible Disclosure ─────────────────────
+inurl:'/responsible disclosure' hoodie
+responsible disclosure swag r=h:com
+responsible disclosure hall of fame
+responsible disclosure r=h:nl
+responsible disclosure r=h:uk
+responsible disclosure r=h:eu
+responsible disclosure bounty r=h:nl
+responsible disclosure bounty r=h:uk
+responsible disclosure bounty r=h:eu
+responsible disclosure swag r=h:nl
+responsible disclosure swag r=h:uk
+responsible disclosure swag r=h:eu
+responsible disclosure reward r=h:nl
+responsible disclosure reward r=h:uk
+responsible disclosure reward r=h:eu
+insite:"responsible disclosure" -inurl:nl
+intext:responsible disclosure
+site eu responsible disclosure
+site .nl responsible disclosure
+site responsible disclosure
+responsible disclosure:sites
+
+# ─── 3.2 Advanced Bug Bounty Combinations ──────────────────
+intext:"BugBounty" intext:"BTC" intext:"reward"
+intext:bounty inurl:/security
+inurl:"bug bounty" intext:"€" inurl:/security
+inurl:"bug bounty" intext:"$" inurl:/security
+inurl:"bug bounty" intext:"INR" inurl:/security
+inurl:bug bounty intext:"rupees"
+inurl:bug bounty intext:"₹"
+inurl:responsible disclosure intext:"INR"
+"responsible disclosure" AND (monetary OR cash OR "gift card" OR crypto OR BTC)
+"security@*" AND ("bug bounty" OR "vulnerability disclosure") ext:txt
+"security.txt" AND ("mailto" OR "contact") AND (bounty OR reward)
+
+# ─── 3.3 Advanced Platform Bypasses ────────────────────────
+"submit vulnerability report" | "powered by bugcrowd" | "powered by hackerone"
+"powered by yeswehack" OR "powered by federacy" OR "powered by intigriti" -site:yeswehack.com -site:federacy.com -site:intigriti.com
+"powered by bugcrowd" OR "powered by hackerone" OR "powered by synack" -site:bugcrowd.com -site:hackerone.com -site:synack.com
+"submit vulnerability report" -site:hackerone.com -site:bugcrowd.com -site:synack.com -site:openbugbounty.org -site:yeswehack.com -site:intigriti.com -site:federacy.com
+"CVSS score" AND "eligible for a reward" -hackerone -bugcrowd
+"Powered by Bug Bounty HQ" OR "Powered by disclose.io"
+"managed by huntr.dev"
+
+# ─── 3.4 Advanced Security.txt Dorks ───────────────────────
+inurl:/security.txt "mailto*" -github.com -wikipedia.org -portswigger.net -magento
+inurl:/.well-known/security.txt intext:bounty -hackerone -bugcrowd -synack
+inurl:/.well-known/security.txt intext:reward -hackerone -bugcrowd -synack
+inurl:/.well-known/security.txt intext:contact -hackerone -bugcrowd -synack
+site:*/.well-known/security.txt intext:contact intext:reward
+
+# ─── 3.5 Advanced Vulnerability Reporting Paths ──────────
+inurl:reporting-security-issues
+inurl:/security/index.html intext:bounty
+inurl:/legal/security intext:monetary
+inurl:/trust/report-a-vulnerability
+inurl:/vulnerability-disclosure-policy reward
+inurl:/security-policy intext:reward
+inurl:/security-policy intext:bounty
+inurl:/security ext:txt "contact" "reward"
+inurl:/security ext:txt "contact" "bounty"
+
+# ─── 3.6 Advanced Recognition & Appreciation ───────────────
+"We value security researchers" OR "We appreciate security reports" AND (reward OR bounty)
+"If you discover a vulnerability" AND (swag OR "hall of fame" OR monetary)
+"If you believe you've found a security vulnerability"
+"If you find a security issue" "reward"
+"we take security very seriously" AND (reward OR bounty OR swag)
+intext:"we offer a bounty"
+intext:"you may be eligible for monetary compensation"
+"security vulnerability" "report" "reward"
+"vulnerability reporting policy" "reward"
+
+# ─── 3.7 Advanced Industry-Specific ────────────────────────
+"cms" bug bounty
+buy bitcoins "bug bounty"
+"security report" "monetary" inurl:security
+"security report" "reward" inurl:report
+site:security.*.* inurl:bounty
+site:help.*.* inurl:bounty
+site:support.*.* intext:security report reward
+
+
+# ════════════════════════════════════════════════════════════
+# 🌍 LEVEL 4: REGIONAL & LANGUAGE-SPECIFIC (Advanced Targeting)
+# ════════════════════════════════════════════════════════════
+
+# ─── 4.1 Europe ────────────────────────────────────────────
+site:*.nl intext:security report reward
+site:*.nl intext:responsible disclosure reward
+site:*.nl intext:responsible disclosure
+site:*.uk intext:security report reward
+site:*.uk intext:responsible disclosure reward
+site:*.de inurl:bug inurl:bounty
+site:*.de intext:responsible disclosure
+site:*.fr intext:"bug bounty" OR "prime de sécurité"
+site:*.fr intext:responsible disclosure
+site:*.it intext:"bug bounty" OR intext:"security reward"
+site:*.ch filetype:txt inurl:security intext:bounty
+site:*.se intext:"responsible disclosure" intext:hall_of_fame
+site:*.at intext:responsible disclosure
+site:*.be intext:responsible disclosure
+site:*.dk inurl:/sikkerhed intext:dusør
+site:*.no inurl:/sikkerhet intext:belønning
+site:*.es inurl:/seguridad intext:recompensa
+site:*.pl inurl:/bezpieczenstwo intext:nagroda
+site:*.eu intext:responsible disclosure
+site:*.eu intext:bug bounty
+site eu responsible disclosure
+responsible disclosure europe
+
+# ─── 4.2 Asia-Pacific ──────────────────────────────────────
+site:*.jp intext:"vulnerability report" intext:swag
+site:*.jp intext:bug bounty
+site:*.cn intext:security report reward
+site:*.cn intext:bug bounty
+site:*.in inurl:responsible disclosure
+site:*.in intext:bug bounty
+site:*.in intext:security reward
+site:*.au responsible disclosure
+site:*.au intext:bug bounty
+site:*.sg intext:bug bounty
+site:*.kr intext:bug bounty
+site:*.th intext:bug bounty
+
+# ─── 4.3 Americas ──────────────────────────────────────────
+site:*.ca intext:"responsible disclosure" intext:reward
+site:*.ca intext:bug bounty
+site:*.br responsible disclosure
+site:*.br intext:bug bounty
+site:*.mx intext:bug bounty
+site:*.ar intext:bug bounty
+
+# ─── 4.4 Africa & Middle East ────────────────────────────
+site:*.za intext:bug bounty
+site:*.ng intext:bug bounty
+site:*.ae intext:bug bounty
+site:*.sa intext:bug bounty
+site:*.il intext:bug bounty
+
+
+# ════════════════════════════════════════════════════════════
+# 🎓 LEVEL 5: EDUCATION & GOVERNMENT (Advanced Niche Targeting)
+# ════════════════════════════════════════════════════════════
+
+# ─── 5.1 Universities & Education ──────────────────────────
+site:*.edu "responsible disclosure" AND (reward OR swag OR bounty)
+site:*.edu inurl:/security intext:"report a vulnerability"
+site:*.edu intext:"we run a bug bounty program"
+site:*.edu intext:"vulnerability disclosure policy" intext:hall_of_fame
+site:*.edu inurl:/responsible-disclosure
+site:*.edu inurl:/bug-bounty
+site:*.edu inurl:/security
+site:*.edu intext:"security researchers" "reward"
+site:*.ac.uk intext:bug bounty
+site:*.ac.in intext:bug bounty
+site:*.edu.au intext:bug bounty
+"responsible disclosure" university
+inurl:/responsible-disclosure/ university
+
+# ─── 5.2 Government ──────────────────────────────────────────
+site:*.gov* "vulnerability disclosure program" OR "bug bounty"
+site:*.gov* inurl:/security intext:contact intext:reward
+site:*.gov* filetype:pdf "vulnerability disclosure policy"
+site:*.gov* intext:responsible disclosure
+site:*.gov* inurl:/responsible-disclosure
+site:*.gov* inurl:/bug-bounty
+site:*.gov* inurl:/security
+site:*.gov* intext:"security researchers"
+site:*.gov* intext:"bug bounty program"
+site:*.gov.uk intext:bug bounty
+site:*.gov.au intext:bug bounty
+site:*.gov.in intext:bug bounty
+site:*.gov.ca intext:bug bounty
+site:*.gov.br intext:bug bounty
+
+
+# ════════════════════════════════════════════════════════════
+# 🏢 LEVEL 6: INDUSTRY-SPECIFIC (Advanced Sector Targeting)
+# ════════════════════════════════════════════════════════════
+
+# ─── 6.1 Finance & Banking ─────────────────────────────────
+site:*.bank intext:bug bounty
+site:*.finance intext:bug bounty
+site:*.insurance intext:bug bounty
+site:*.pay intext:bug bounty
+site:*.crypto intext:bug bounty
+site:*.exchange intext:bug bounty
+intext:"financial services" "bug bounty"
+intext:"banking" "vulnerability disclosure"
+
+# ─── 6.2 Healthcare ────────────────────────────────────────
+site:*.health intext:bug bounty
+site:*.medical intext:bug bounty
+site:*.hospital intext:bug bounty
+site:*.pharma intext:bug bounty
+intext:"healthcare" "vulnerability disclosure"
+intext:"HIPAA" "bug bounty"
+
+# ─── 6.3 E-commerce & Retail ───────────────────────────────
+site:*.shop intext:bug bounty
+site:*.store intext:bug bounty
+site:*.market intext:bug bounty
+intext:"e-commerce" "bug bounty"
+intext:"online store" "vulnerability disclosure"
+
+# ─── 6.4 SaaS & Technology ─────────────────────────────────
+site:*.io intext:bug bounty
+site:*.app intext:bug bounty
+site:*.cloud intext:bug bounty
+site:*.ai intext:bug bounty
+site:*.dev intext:bug bounty
+site:*.tech intext:bug bounty
+intext:"SaaS" "bug bounty"
+intext:"API" "vulnerability disclosure"
+
+# ─── 6.5 Gaming & Entertainment ────────────────────────────
+site:*.game intext:bug bounty
+site:*.gaming intext:bug bounty
+site:*.esports intext:bug bounty
+intext:"gaming" "bug bounty"
+intext:"esports" "vulnerability disclosure"
+
+
+# ════════════════════════════════════════════════════════════
+# 🔥 LEVEL 7: RED TEAM & ADVANCED RECON (Expert Level)
+# ════════════════════════════════════════════════════════════
+
+# ─── 7.1 Hidden/Obscure Programs ─────────────────────────
+inurl: private bugbountyprogram
+inurl:/security ext:txt "contact" "reward" -github.com -wikipedia.org -portswigger.net
+inurl:/security ext:txt "bounty" -github.com -wikipedia.org -portswigger.net
+site:*.*.* inurl:bug inurl:bounty
+site:*.*.* inurl:security inurl:reward
+site:*.*.* inurl:responsible inurl:disclosure
+
+# ─── 7.2 API & Developer Portals ───────────────────────────
+site:developers.*.* intext:bug bounty
+site:developer.*.* intext:bug bounty
+site:api.*.* intext:security intext:reward
+site:docs.*.* intext:vulnerability disclosure
+inurl:/api intext:bug bounty
+inurl:/developer intext:security reward
+
+# ─── 7.3 GitHub & GitLab Security ──────────────────────────
+site:github.com "responsible disclosure" "reward"
+site:github.com "bug bounty" "SECURITY.md"
+site:github.com "vulnerability disclosure policy"
+site:gitlab.com "responsible disclosure"
+site:gitlab.com "bug bounty"
+
+# ─── 7.4 Job Boards & Career Pages ─────────────────────────
+intext:"bug bounty" "security engineer" site:careers.*
+intext:"bug bounty" "security researcher" site:jobs.*
+intext:"vulnerability disclosure" "security team" site:careers.*
+
+# ─── 7.5 News & Press Releases ────────────────────────────
+intext:"launched bug bounty program"
+intext:"announced vulnerability disclosure program"
+intext:"new bug bounty" "program"
+intext:"security researchers" "rewarded"
+
+# ─── 7.6 Wayback Machine & Archives ──────────────────────
+site:web.archive.org inurl:bug-bounty
+site:web.archive.org inurl:responsible-disclosure
+site:web.archive.org "bug bounty program"
+
+# ─── 7.7 Shodan-Style Google Dorks ────────────────────────
+intitle:"Bug Bounty" OR intitle:"Vulnerability Disclosure" OR intitle:"Security Rewards"
+intitle:"Responsible Disclosure" intext:reward
+intitle:"Security" intitle:"Bounty"
+inurl:/security AND intitle:"report"
+inurl:/bug AND intitle:"bounty"
+
+# ─── 7.8 Advanced Boolean Combinations ────────────────────
+("vulnerability disclosure program" OR "bug bounty program" OR "responsible disclosure") AND (reward OR bounty OR swag OR "hall of fame" OR monetary OR cash)
+("security researchers" OR "white hat" OR "ethical hacker") AND (reward OR bounty OR swag)
+("submit vulnerability" OR "report vulnerability" OR "disclose vulnerability") AND (reward OR bounty)
+("security.txt" OR "security policy" OR "vulnerability policy") AND (bounty OR reward OR contact)
+
+# ─── 7.9 Dutch-Specific (Responsibledisclosure.nl) ─────────
+"van de melding met een minimum van een" -site:responsibledisclosure.nl
+site:responsibledisclosure.com
+
+# ─── 7.10 Advanced Exclusion Techniques ────────────────────
+"responsible disclosure" -site:hackerone.com -site:bugcrowd.com -site:synack.com -site:openbugbounty.org -site:yeswehack.com -site:intigriti.com -site:federacy.com
+"bug bounty" -site:hackerone.com -site:bugcrowd.com -site:synack.com -site:openbugbounty.org
+"vulnerability disclosure" -site:hackerone.com -site:bugcrowd.com
+"security researchers" "reward" -site:hackerone.com -site:bugcrowd.com
+
+
+# ════════════════════════════════════════════════════════════
+# 🎯 LEVEL 8: SPECIALIZED & NICHE (Master Level)
+# ════════════════════════════════════════════════════════════
+
+# ─── 8.1 Specific Vulnerability Types ──────────────────────
+"bug bounty" "SQL injection"
+"bug bounty" "XSS" "reward"
+"bug bounty" "RCE"
+"bug bounty" "IDOR"
+"bug bounty" "CSRF"
+"vulnerability disclosure" "critical" "reward"
+
+# ─── 8.2 Mobile App Programs ────────────────────────────────
+intext:"mobile app" "bug bounty"
+intext:"iOS" "vulnerability disclosure"
+intext:"Android" "bug bounty"
+site:apps.*.* intext:security reward
+
+# ─── 8.3 IoT & Hardware ────────────────────────────────────
+intext:"IoT" "bug bounty"
+intext:"hardware" "vulnerability disclosure"
+intext:"firmware" "bug bounty"
+
+# ─── 8.4 Blockchain & Web3 ─────────────────────────────────
+intext:"blockchain" "bug bounty"
+intext:"smart contract" "bug bounty"
+intext:"DeFi" "vulnerability disclosure"
+intext:"NFT" "bug bounty"
+site:*.eth intext:bug bounty
+
+# ─── 8.5 Automotive ──────────────────────────────────────
+intext:"automotive" "bug bounty"
+intext:"vehicle" "vulnerability disclosure"
+intext:"car" "bug bounty"
+
+# ─── 8.6 Critical Infrastructure ───────────────────────────
+intext:"critical infrastructure" "vulnerability disclosure"
+intext:"SCADA" "bug bounty"
+intext:"industrial control" "security researchers"
+
+
+# ════════════════════════════════════════════════════════════
+# 🛠️ BONUS: AUTOMATION & TOOLING
+# ════════════════════════════════════════════════════════════
+
+# ─── 9.1 For Automation Scripts ────────────────────────────
+# Use these with tools like GoBuster, ffuf, or custom scripts
+# to enumerate bug bounty endpoints
+
+# Common paths to fuzz:
+# /bug-bounty
+# /responsible-disclosure
+# /.well-known/security.txt
+# /security.txt
+# /vulnerability-disclosure-policy
+# /security-policy
+# /report-a-vulnerability
+# /security-researchers
+# /hall-of-fame
+# /security/bug-bounty
+# /legal/security
+# /trust/report-a-vulnerability
+
+# ─── 9.2 Wordlist for Subdomain Enumeration ────────────────
+# Combine with subfinder, amass, assetfinder:
+# security.{target}
+# bugbounty.{target}
+# responsible-disclosure.{target}
+# security-researchers.{target}
+# vulnerability-disclosure.{target}
+# report-vulnerability.{target}
+
+# ─── 9.3 Nuclei Templates Keywords ─────────────────────────
+# Use these keywords to find custom nuclei templates:
+# "bug-bounty"
+# "responsible-disclosure"
+# "security.txt"
+# "vulnerability-disclosure"
+# "security-policy"
+
+
+# ════════════════════════════════════════════════════════════
+# ⚠️ ETHICAL GUIDELINES
+# ════════════════════════════════════════════════════════════
+#
+# 1. ALWAYS read and follow the program's scope and rules
+# 2. NEVER test without explicit authorization
+# 3. DO NOT access sensitive data beyond what's needed
+# 4. REPORT findings responsibly through official channels
+# 5. ALLOW reasonable time for patching before disclosure
+# 6. RESPECT the company's decisions on rewards
+# 7. NEVER extort or threaten for higher payouts
+# 8. DOCUMENT your findings clearly and professionally
+# 9. STAY within legal boundaries (CFAA, Computer Misuse Act, etc.)
+# 10. BE patient and professional in all communications
+#
+# Remember: Bug bounty is about making the internet safer,
+# not about personal gain at others' expense.
+#
+# ════════════════════════════════════════════════════════════
